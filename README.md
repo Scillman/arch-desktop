@@ -16,6 +16,8 @@ Personal Arch Linux desktop setup instructions.
 ## Windows 11 (Home)
 1) Install Windows into the unallocated space.
 1) After installation ensure the EFI is in the EFI partition. (IMPORTANT!!)
+1) `reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f`
+    1) This sets Windows to use UTC instead of local time, allowing synchronous time between both operating systems.
 
 <sup>1</sup> Windows will create multiple partitions for itself inside the allocated space. (MSR, Windows and Recovery)
 
@@ -110,7 +112,7 @@ TODO:
 ## Entertainment
 1) `# vim /etc/pacman.conf`
 1) `# pacman -S dolphin firefox calibre steam vlc vlc-plugins-all`
-1) `# sudo pacman kdenetwork-filesharing`
+1) `# pacman kdenetwork-filesharing`
 1) `$ yay -S discord_arch_electron`
 1) `# pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-tools`
 1) `# pacman -S lutris`
