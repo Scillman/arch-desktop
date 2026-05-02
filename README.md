@@ -154,7 +154,7 @@ DNS=<ip>
 
 ### Winetricks (Girls' Frontline 2: EXILIUM)
 1) `corefonts`
-1) `vc2022`
+1) `vcrun2022`
 1) `dotnet48`
 1) `# pacman -S gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav`
 
