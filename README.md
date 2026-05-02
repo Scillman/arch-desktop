@@ -98,7 +98,7 @@ DNS=
 1) `# pacman -S plasma-meta konsole`
 1) `# pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber`
 1) `$ systemctl --user enable --now pipewire pipewire-pulse wireplumber`
-1) `# pacman -S NetworkManager`
+1) `# pacman -S networkmanager`
 1) `# systemctl stop systemd-resolved`
 1) `# systemctl diable systemd-resolved`
 1) `# systemctl stop systemd-networkd`
