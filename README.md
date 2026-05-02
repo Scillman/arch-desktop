@@ -48,7 +48,7 @@ Personal Arch Linux desktop setup instructions.
 1) `# hwclock --systohc`
 1) `# locale-gen`
 1) `# vim /etc/locale.gen` (`en_US.UTF-8`, `nl_NL.UTF-8`)
-1) `# vim /etc/locale/conf` (`LANG=nl_NL.UTF-8`)
+1) `# vim /etc/locale.conf` (`LANG=nl_NL.UTF-8`)
 1) `# locale-gen`
 1) `# vim /etc/vconsole.conf` (`KEYMAP=us`)
 1) `# vim /etc/hostname`
