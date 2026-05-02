@@ -70,9 +70,16 @@ Personal Arch Linux desktop setup instructions.
 Name=
 
 [Network]
-Address=
-Gateway=
-DNS=
+
+# IPv4
+Address=<ip>/24
+Gateway=<ip>
+DNS=<ip>
+
+# IPv6
+Address=<ip>/64
+Gateway=<ip>
+DNS=<ip>
 ```
 
 ## Basic Tools (Optional)
