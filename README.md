@@ -9,8 +9,8 @@ Personal Arch Linux desktop setup instructions.
 1) Boot with Arch Linux install USB.
 1) Set-up disk partitions using `fdisk /dev/<drive>`
     1) Partition 1: 1GB EFI filesystem FAT32 formatted
-    2) Partition 2: 1TB Windows (unallocated)
-    3) Parititon 3: 1TB Arch Linux (allocated to prevent Windows installer from taking the space)
+    2) Partition 2,3,4: 1TB Windows (unallocated)
+    3) Parititon 5: 1TB Arch Linux (allocated to prevent Windows installer from taking the space)
 1) `# mkfs.fat -F 32 /dev/<efi>`
 
 ## Windows 11 (Home)
