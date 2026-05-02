@@ -152,5 +152,5 @@ DNS=
 1) `# pacman -S gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav`
 
 ## Coding
-1) `$ yay visual-studio-code-bin`
-1) `$ vim /home/scillman/.config/code-flags` (`--password-store=basic`)
+1) `$ yay -S visual-studio-code-bin`
+1) `$ vim /home/scillman/.config/code-flags.conf` (`--password-store=basic`)
