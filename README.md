@@ -125,9 +125,18 @@ DNS=
 
 ## Entertainment
 1) `# vim /etc/pacman.conf`
+    1) Uncomment `[multilib]` section.
+1) `# pacman -Syu`
 1) `# pacman -S dolphin firefox calibre steam vlc vlc-plugins-all`
+    1) Select `radeon` options when available. (AMD GPU)
 1) `# pacman kdenetwork-filesharing`
 1) `$ yay -S discord_arch_electron`
+1) `$ vim /home/scillman/.config/discord/settings.json`
+```
+{
+  "SKIP_HOST_UPDATE": true
+}
+``` 
 1) `# pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-tools`
 1) `# pacman -S lutris`
 1) `# pacman -S wine wine-gecko wine-mono`
