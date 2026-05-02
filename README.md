@@ -149,7 +149,6 @@ DNS=<ip>
 1) `# pacman -S wine wine-gecko wine-mono`
 1) `# pacman -S lib32-gnutls lib32-libldap lib32-mpg123 lib32-openal lib32-v4l-utils lib32-libpulse lib32-alsa-plugins lib32-libxcomposite lib32-libxinerama lib32-ncurses lib32-libxml2 lib32-freetype2 lib32-libpng lib32-sdl2`
 1) `# pacman -S winetricks`
-1) `# pacman -S dxvk-bin` (?)
 
 
 ### Winetricks (Girls' Frontline 2: EXILIUM)
