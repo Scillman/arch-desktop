@@ -119,8 +119,8 @@ DNS=
 1) `$ makepkg -si`
 1) `$ yay -S brother-mfc-j4620dw`
 1) `$ yay -S brscan4`
-1) `$ brsaneconfig4 -a name="MFC-J4620DW" model="MFC-J4620DW" ip=<ip>`
-1) `$ lpadmin -p Brother_MFC_J4620DW -v socket://<ip>:9100 -E`
+1) `# brsaneconfig4 -a name="MFC-J4620DW" model="MFC-J4620DW" ip=<ip>`
+1) `# lpadmin -p Brother_MFC_J4620DW -v socket://<ip>:9100 -E`
 1) `# lpoptions -d Brother_MFC_J4620DW`
 
 ## Entertainment
