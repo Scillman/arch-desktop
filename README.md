@@ -159,3 +159,7 @@ DNS=<ip>
 ## Coding
 1) `$ yay -S visual-studio-code-bin`
 1) `$ vim /home/scillman/.config/code-flags.conf` (`--password-store=basic`)
+
+## KWallet
+1) `# pacman -S pinentry`
+1) `$ gpg --full-generate-key`
