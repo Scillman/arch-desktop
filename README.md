@@ -22,10 +22,13 @@ Personal Arch Linux desktop setup instructions.
 <sup>1</sup> Windows will create multiple partitions for itself inside the allocated space. (MSR, Windows and Recovery)
 
 ## Arch Linux (Minimal)
-TODO:
+1) `fdisk -l`
+1) `fdisk /dev/<nvme>`
+    1) Make sure the sector starts for Linux Swap and/or Filesystem are divisible by 2048 (e.g. `<start_sector>%2048==0`)
 
+1) `# localectl list-keymaps` (the default is `us` but ensure its there)
 1) `# loadkeys us`
-1) `# cat /sys/firmware/efi/fw_platform_size`
+1) `# cat /sys/firmware/efi/fw_platform_size` (`64` for 64-bit OS)
 1) `# ip link`
 1) `# ping ping.archlinux.org`
 1) `# timedatectl`
@@ -33,7 +36,7 @@ TODO:
 1) `# mkfs.ext4 /dev/<root>`
 1) `# mkswap /dev/<swap>`
 1) `# mount /dev/<root> /mnt`
-1) `# mount /dev/<efi> /mnt/boot`
+1) `# mount --mkdir /dev/<efi> /mnt/boot`
 1) `# swapon /dev/<swap>`
 1) `# pacstrap -K /mnt base linux linux-firmware`
 1) `# genfstab -U /mnt >> /mnt/etc/fstab`
@@ -41,7 +44,7 @@ TODO:
 
 ##
 1) `# pacman -S vim`
-1) `# ln -sf /usr/share/Europe/Amsterdam /etc/localtime`
+1) `# ln -sf /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime`
 1) `# hwclock --systohc`
 1) `# locale-gen`
 1) `# vim /etc/locale.gen` (`en_US.UTF-8`, `nl_NL.UTF-8`)
@@ -55,24 +58,35 @@ TODO:
 1) `# pacman -S grub efibootmgr os-prober`
 1) `# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB`
 1) `# vim /etc/default/grub`
+    1) Uncomment `GRUB_DISABLE_OS_PROBER=false`
 1) `# grub-mkconfig -o /boot/grub/grub.cfg`
 
 ## Networkd
 1) `# systemctl enable systemd-networkd`
 1) `# systemctl enable systemd-resolved`
 1) `# vim /etc/systemd/network/99-custom.network`
+```
+[Match]
+Name=
+
+[Network]
+Address=
+Gateway=
+DNS=
+```
 
 ## Basic Tools (Optional)
 1) `# pacman -S zip unzip curl wget git`
 
 ## Users & Security
 1) `# pacman -S sudo`
-1) `# groupadd -g 999 admin`
+1) `# groupadd -g 1000 admin`
 1) `# useradd --home-dir /home/admin --create-home -g admin admin`
-1) `# groupadd -g 1000 scillman`
+1) `# groupadd -g 1001 scillman`
 1) `# useradd --home-dir /home/scillman --create-home -g scillman scillman`
 1) `# chmod u+w /etc/sudoers`
 1) `# vim /etc/sudoers`
+    1) Copy the root entry for the `admin` user
 1) `# chmod u-w /etc/sudoers`
 
 ## Docker
