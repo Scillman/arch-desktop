@@ -174,9 +174,10 @@ _In case of multiple monitors set the dekstop/monitors the way you have position
 
 
 ### Winetricks (Girls' Frontline 2: EXILIUM)
-1) `corefonts`
-1) `vcrun2022`
 1) `# pacman -S gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav`
+1) `$ WINEPREFIX=<game_dir> winetricks corefonts`
+1) `$ WINEPREFIX=<game_dir> winetricks vcrun2022`
+1) `$ WINEPREFIX=<game_dir> WINEDEBUG=fixme-all wine C:/GF2Exilium/PCUpdater/PCUpdater.exe`
 
 ## Coding
 1) `# pacman -S git openssh`
