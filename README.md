@@ -131,7 +131,7 @@ DNS=<ip>
 1) `$ /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland`
 
 ### Multiple Monitors
-_In case of multiple monitors set the dekstop/monitors they way you have positioned them. This way the next step will be seamless._
+_In case of multiple monitors set the dekstop/monitors the way you have positioned them. This way the next step will be seamless._
 
 ### Login Manager
 1) `# pacman -S plasma-login-manager`
