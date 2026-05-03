@@ -90,8 +90,8 @@ DNS=<ip>
 1) `# pacman -S sudo`
 1) `# groupadd -g 1000 admin`
 1) `# useradd --home-dir /home/admin --create-home -g admin admin`
-1) `# groupadd -g 1001 scillman`
-1) `# useradd --home-dir /home/scillman --create-home -g scillman scillman`
+1) `# groupadd -g 1001 <user>`
+1) `# useradd --home-dir /home/<user> --create-home -g <user> <user>`
 1) `# chmod u+w /etc/sudoers`
 1) `# vim /etc/sudoers`
     1) Copy the root entry for the `admin` user
@@ -100,7 +100,7 @@ DNS=<ip>
 ## Docker
 1) `# pacman -S docker`
 1) `# usermod -aG docker admin`
-1) `# usermod -aG docker scillman`
+1) `# usermod -aG docker <user>`
 1) `# systemctl enable docker`
 1) `# systemctl start docker`
 
