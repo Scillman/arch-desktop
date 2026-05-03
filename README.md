@@ -127,14 +127,17 @@ DNS=<ip>
 1) `# pacman -S freetype2 fontconfig`
 1) `# fc-cache -fv`
 
+### Manual
+1) `$ /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland`
+
+### Multiple Monitors
+_In case of multiple monitors set the dekstop/monitors they way you have positioned them. This way the next step will be seamless._
+
 ### Login Manager
 1) `# pacman -S plasma-login-manager`
 1) `# systemctl enable plasmalogin`
 1) `# mv /var/lib/plasmalogin/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json.bak`
 1) `# cp /home/scillman/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json`
-
-### Manual (Optional)
-1) `$ /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland`
 
 ## Printer
 1) `# pacman -S cups ghostscript gsfonts gutenprint`
