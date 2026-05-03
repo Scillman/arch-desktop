@@ -102,9 +102,15 @@ DNS=<ip>
 1) `# usermod -aG docker scillman`
 
 ## KDE-Plasma
+
+### Install
 1) `# pacman -S plasma-meta konsole`
+
+### Audio
 1) `# pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber`
 1) `$ systemctl --user enable --now pipewire pipewire-pulse wireplumber`
+
+### Network
 1) `# pacman -S networkmanager`
 1) `# systemctl stop systemd-resolved`
 1) `# systemctl diable systemd-resolved`
@@ -112,9 +118,19 @@ DNS=<ip>
 1) `# systemctl diable systemd-networkd`
 1) `# systemctl enable NetworkManager`
 1) `# systemctl start NetworkManager`
+
+### Fonts
 1) `# pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-dejavu`
 1) `# pacman -S freetype2 fontconfig`
 1) `# fc-cache -fv`
+
+### Login Manager
+1) `# pacman -S plasma-login-manager`
+1) `# systemctl enable plasmalogin`
+1) `# mv /var/lib/plasmalogin/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json.bak`
+1) `# cp /home/scillman/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json`
+
+### Manual (Optional)
 1) `$ /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland`
 
 ## Printer
