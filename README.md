@@ -100,6 +100,8 @@ DNS=<ip>
 1) `# pacman -S docker`
 1) `# usermod -aG docker admin`
 1) `# usermod -aG docker scillman`
+1) `# systemctl enable docker`
+1) `# systemctl start docker`
 
 ## KDE-Plasma
 
