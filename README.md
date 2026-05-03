@@ -137,7 +137,7 @@ _In case of multiple monitors set the dekstop/monitors they way you have positio
 1) `# pacman -S plasma-login-manager`
 1) `# systemctl enable plasmalogin`
 1) `# mv /var/lib/plasmalogin/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json.bak`
-1) `# cp /home/scillman/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json`
+1) `# cp ~/.config/kwinoutputconfig.json /var/lib/plasmalogin/.config/kwinoutputconfig.json`
 
 ## Printer
 1) `# pacman -S cups ghostscript gsfonts gutenprint`
@@ -160,7 +160,7 @@ _In case of multiple monitors set the dekstop/monitors they way you have positio
     1) Select `radeon` options when available. (AMD GPU)
 1) `# pacman kdenetwork-filesharing`
 1) `$ yay -S discord_arch_electron`
-1) `$ vim /home/scillman/.config/discord/settings.json`
+1) `$ vim ~/.config/discord/settings.json`
 ```
 {
   "SKIP_HOST_UPDATE": true
@@ -181,7 +181,7 @@ _In case of multiple monitors set the dekstop/monitors they way you have positio
 ## Coding
 1) `# pacman -S git openssh`
 1) `$ yay -S visual-studio-code-bin`
-1) `$ vim /home/scillman/.config/code-flags.conf` (`--password-store=basic`)
+1) `$ vim ~/.config/code-flags.conf` (`--password-store=basic`)
 
 ## KWallet
 1) `# pacman -S pinentry`
