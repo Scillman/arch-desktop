@@ -187,3 +187,16 @@ _In case of multiple monitors set the dekstop/monitors the way you have position
 ## KWallet
 1) `# pacman -S pinentry`
 1) `$ gpg --full-generate-key`
+
+## Waydroid
+1) `# pacman -S waydroid`
+1) `# waydroid init`
+1) `# waydroid init -s GAPPS`
+1) `# systemctl enable waydroid-container`
+1) `# systemctl start waydroid-container`
+1) `$ waydroid session start`
+1) `$ yay -S waydroid-script-git`
+1) `# waydroid-extras install libndk`
+1) `$ waydroid session stop`
+1) `$ waydroid session start`
+1) `$ waydroid show-full-ui`
