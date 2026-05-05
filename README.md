@@ -189,6 +189,7 @@ _In case of multiple monitors set the dekstop/monitors the way you have position
 1) `$ gpg --full-generate-key`
 
 ## Waydroid
+_Docker may be in the way of network connectivity._
 1) `# pacman -S waydroid`
 1) `# waydroid init`
 1) `# waydroid init -s GAPPS`
