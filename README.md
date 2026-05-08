@@ -179,7 +179,7 @@ _In case of multiple monitors set the dekstop/monitors the way you have position
 1) `$ WINEPREFIX=<game_dir> winetricks vcrun2022`
 1) `$ WINEPREFIX=<game_dir> WINEDEBUG=fixme-all wine C:/GF2Exilium/PCUpdater/PCUpdater.exe`
 
-## Coding
+## Visual Studio Code
 1) `# pacman -S git openssh`
 1) `$ yay -S visual-studio-code-bin`
 1) `$ vim ~/.config/code-flags.conf` (`--password-store=basic`)
@@ -201,3 +201,8 @@ _Docker may be in the way of network connectivity._
 1) `$ waydroid session stop`
 1) `$ waydroid session start`
 1) `$ waydroid show-full-ui`
+
+## Minecraft
+1) `# pacman -S jdk-openjdk`
+1) `$ java --version`
+1) `$ java -jar fabric-installer-1.1.1.jar`
