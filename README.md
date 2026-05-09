@@ -203,6 +203,6 @@ _Docker may be in the way of network connectivity._
 1) `$ waydroid show-full-ui`
 
 ## Minecraft
-1) `# pacman -S jdk-openjdk`
+1) `# pacman -S jdk21-openjdk`
 1) `$ java --version`
 1) `$ java -jar fabric-installer-1.1.1.jar`
