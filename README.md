@@ -203,6 +203,7 @@ _Docker may be in the way of network connectivity._
 1) `$ waydroid show-full-ui`
 
 ## Minecraft
-1) `# pacman -S jdk21-openjdk`
+1) `# pacman -S jdk25-openjdk`
 1) `$ java --version`
-1) `$ java -jar fabric-installer-1.1.1.jar`
+1) `$ yay -S prismlauncher`
+1) `$ MESA_LOADER_DRIVER_OVERRIDE=zink prismlauncher`
